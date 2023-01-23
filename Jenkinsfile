@@ -8,7 +8,7 @@ pipeline {
         }
         stage('change directory and present working directory') {
             steps {
-                sh 'cd /home/ubuntu/magic-cursor'
+                sh 'cd /home/ubuntu'
                 sh 'pwd'
             }
         }
