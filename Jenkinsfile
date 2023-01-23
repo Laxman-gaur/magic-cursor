@@ -12,11 +12,6 @@ pipeline {
                 sh 'git clone https://github.com/Laxman-gaur/magic-cursor.git'
             }
         }
-        stage('change directory') {
-            steps {
-                sh 'cd /home/ubuntu/magic-cursor'
-            }
-        }
         stage('build') {
             steps {
                 sh 'npm install'
