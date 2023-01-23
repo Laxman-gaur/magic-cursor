@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Clone') {
             steps {
-                git url: 'https://github.com/Laxman-gaur/magic-cursor.git', branch: 'master'
+                sh 'git clone https://github.com/Laxman-gaur/magic-cursor.git'
             }
         }
         stage('change directory') {
