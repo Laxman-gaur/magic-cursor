@@ -8,7 +8,7 @@ pipeline {
         }
         stage('change directory and present working directory') {
             steps {
-                sh 'cd /home/ubuntu/flask-calculator'
+                sh 'cd /home/ubuntu/magic-cursor'
                 sh 'pwd'
             }
         }
