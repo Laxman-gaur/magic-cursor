@@ -1,15 +1,20 @@
 pipeline {
     agent any
     stages {
+        stage('change directory and present working directory') {
+            steps {
+                sh 'cd /home/ubuntu'
+                sh 'pwd'
+            }
+        }
         stage('Clone') {
             steps {
                 git url: 'https://github.com/Laxman-gaur/magic-cursor.git', branch: 'master'
             }
         }
-        stage('change directory and present working directory') {
+        stage('change directory') {
             steps {
-                sh 'cd /home/ubuntu'
-                sh 'pwd'
+                sh 'cd /home/ubuntu/magic-cursor'
             }
         }
         stage('install required dependencies') {
