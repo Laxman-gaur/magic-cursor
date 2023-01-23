@@ -17,7 +17,7 @@ pipeline {
                 sh 'cd /home/ubuntu/magic-cursor'
             }
         }
-        stage('install required dependencies') {
+        stage('build') {
             steps {
                 sh 'npm install'
             }
