@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'npm audit fix'
+                sh 'npm audit fix --force'
                 sh 'npm install'
             }
         }
@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'npm start server.js'
+                sh 'pm2 start server.js'
             }
         }
     }
