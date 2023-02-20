@@ -1,6 +1,6 @@
 const path = require('path');
 const args = require('minimist')(process.argv.slice(2));
-const PORT = args['p'] || 8080;
+const PORT = args['p'] || 4000;
 
 const express = require('express');
 const app = express();
