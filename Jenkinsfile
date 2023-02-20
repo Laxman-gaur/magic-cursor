@@ -3,13 +3,8 @@ pipeline {
     stages {
         stage('change directory and present working directory') {
             steps {
-                sh 'cd /home/ubuntu'
+                sh 'cd /home/ubuntu/magic-cursor'
                 sh 'pwd'
-            }
-        }
-        stage('Clone') {
-            steps {
-                sh 'git clone https://github.com/Laxman-gaur/magic-cursor.git'
             }
         }
         stage('build') {
