@@ -9,6 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
+                sh 'npm audit fix'
                 sh 'npm install'
             }
         }
