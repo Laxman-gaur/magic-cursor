@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('change directory and present working directory') {
             steps {
-                sh 'cd /var/jenkins/workspace/magic-cursor'
+                sh 'cd /var/lib/jenkins/workspace/magic-cursor'
                 sh 'pwd'
             }
         }
